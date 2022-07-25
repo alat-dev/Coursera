@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title >ALAT's First Website</title>
+	<link rel="stylesheet" href="style.css"
+	<!--Ini CSS didalam style-->
+	<style>
+	h1 {
+		color : darkblue;
+		font-size: 26px;
+		text-align: center;
+	}
+	p{
+		width: 500px;
+	}
+	
+	#section1{
+		font-size: 20px;
+		font-weight: bold;
+		font-style: italic;
+		background: green;
+		opacity: .6;
+		color: red;
+	}
+
+	#tespseudoselector li{
+		list-style:  none;
+
+	} 
+
+	#tespseudoselector a:link, #tespseudoselector a:visited{
+		text-decoration: none;
+		background-color: blue;
+		border:  1px solid blue;
+		color :black;
+		display: block;
+		width: 200px;
+		margin-bottom: 2px;
+		text-align: center;
+	}
+	#tespseudoselector a:hover, #tespseudoselector a:active {
+		text-decoration: none;
+		background-color: green;
+		border:  1px solid blue;
+		color :black;
+		display: block;
+		width: 200px;
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	#tespseudoselector li:nth-child(3){
+		font-size: 24px;
+	}
+
+
+
+
+	section,span{
+		color: darkblue;
+	}
+	div.ngeteskombinasi{
+		color: green;
+	}
+</style>
 </head>
 
+
+
+
+
+
 <body>
-	<img src="lambang-kota-medan.jpg" width="200" height="50">
+	<div class="ngeteskombinasi"><img src="lambang-kota-medan.jpg" width="200" height="50" alt="Harus ada alt ya tiap picture"></div>
+	<div><img src="https://drive.google.com/uc?export=view&id=1q-zLRoqSm_dbpHQxyUTGyFVgInaco_Tg" width="200" height="50" alt="Harus ada alt ya tiap picture"></div>
 	LOVE YOU
 	<h1 style="text-align:center;" id="top"> ALAT's website </h1>
 	<div> ALAT Dev. sedang mencoba menamatkan Web Development </div>
@@ -48,7 +117,21 @@
 <h1> Dibawah ini saya ngetes Links </h1>
 <a href="#top"> Go to Top </a>
 
-<section id="section1"> <h2> This is Section 1 </h2></section>
+<section id="section1"> <h2> This is Section 1 </h2>
+<p> I woKalo span dia bisa gabung sama yang lain dalam satu baris 👋 INI CONTOHNYA Yah ini bener ini dah span baru tapi masih sebaris
+span bisa didalam div, tapi tidak sebaliknya. karena div itu block level element sedangkan span itu inline element</p>
+</section>
+
+<ul id="tespseudoselector">
+	<li> <a href="#section1">Menu </a></li>
+	<li> <a href="https://www.instagram.com/alatdeveloper/" target="_blank" > Fanpage </a> </li>
+	<li> <a href="#top"> Back to Top </a> </li>
+
+</ul>
+
+
+
+
 
 <!-- ignored content here, pake tanda lebiih kecil sama tanda swru sama dua garis, tutupnya pake --> -->
 
@@ -56,7 +139,7 @@
 	<hr>
 	ALAT Copyright &copy; 2022
 	<a href="https://www.instagram.com/alatdeveloper/" target="_blank" ><div>Contact : ALAT Dev. &lt; 081123456789 &gt;</div> </a>
-	<div> target="_blank" itu gunanya supaya open in new page</div>
+	<div  class="biru-in ngeteskombinasi"> target="_blank" itu gunanya supaya open in new page</div>
 </footer>
 
 
