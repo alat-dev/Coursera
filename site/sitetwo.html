@@ -4,17 +4,141 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hello, there</title>
-	<link rel="stylesheet" type="text/css" href="stle.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		*{
+			box-sizing: border-box;
+
+		}
+		#box, .box{
+			background-color: green;
+			padding: 10px 10px 10px 10px;
+			border: 5px solid darkblue;
+			margin: 20px 20px 20px 20px;
+			width: 300px;
+			color: white;
+			border-radius: 50% 20% / 10% 40%;
+			box-sizing: border-box;
+		}
+
+		#Content{
+			background-color:blue;
+
+
+		}
+		.scroll{
+			width: 500px;
+			height: 180px;
+			overflow: scroll;
+			border-radius: 10px;
+			align-items: center;
+			margin: 0 auto;
+
+		}
+
+		.BackgroundTest{
+			background-color: gray;
+			background-image: url("lambang-kota-medan.jpg");
+			height: 800px;
+			background-repeat: no-repeat;
+			background-position: right;
+
+			/*atau bisa juga background: url("lambang-kota-medan.jpg") no-repeat right center gray*/
+		}
+
+		#kotakPar{
+			margin: 10px;
+			background-color: gray;
+			
+			position: relative;
+			top: 20px;
+		}
+		p{
+			width: 100px;
+			height: 100px;
+			border: 1px solid black;
+			padding: 2px;
+			overflow: visible;
+			box-sizing: border-box;
+		}
+		/*Ok jadi relative positioning itu mindahin blocknya di mata kita, tapi di komputer blocknya amsih tetap disana*/
+		/*Kalo absolut, ya dimata komputer sama kita sama. jadi dia ga nyediain space lg untuk dia*/
+		#p1{
+			float: left;
+			width: 49%;
+			position: relative;
+			top: 0px;
+		}
+		#p2{
+			float: right;
+			position: relative;
+			top: 0px;
+			width: 49%;
+			height: auto;
+			
+		}
+		#p3{
+			clear: both;
+			width: 49%;
+			position: relative;
+
+			right: -40px;
+		}
+
+		#p4{
+			position: absolute;
+			top: 50px;
+			clear: both;
+			width: 49%;
+		}
+		section{
+			clear: both;
+			/*clear supaya gaboleh ada floating element yang ada di sebelah kiri/kanan/duaduanya darimereka*/
+		}
+	</style>
 </head>
 <body>
-<h1>	
-<div style="text-align: center;">  Hello, there </div>
+<h1 style="text-align: center;">	
+
+Hello, there 
 </h1>
 
 <h2>
-	<p>Ini cina baik hati, kamu cina saya belieskrim mbuat kamu</p>
-	</h2>
-</body>
+	Ini cina baik hati, kamu cina saya belieskrim mbuat kamu
+</h2>
 
-<div> <a href="index.html"> Back </a></div>
+
+<h2>
+ Box Model	
+</h2>
+
+
+<div id="box">
+	<div id="Content">
+		I dont know what to write here because this just an example for the box modelling
+	</div>
+	<span class="box"> Hi </span>
+</div>
+
+	
+	<span class="box"> Hi </span>
+	<span class="box"> Hi </span>
+	<div class="box scroll"> KOK BISA DITENGAH?? Karena pake margin Auto ok ges <br>Gatau&nbsp;lagi mau tulis apa tapi&nbsp;gpp la biar panjang aku tulis ini ja. Kenapa? karena butuh untuk latihan pake scrollbar Overflow:auto atau :scroll;Gatau lagi mau tulis apa tapi gpp la biar panjang aku tulis ini ja. Kenapa? karena butuh untuk latihan pake scrollbar Overflow:auto atau :scroll;Gatau lagi mau tulis apa tapi gpp la biar panjang aku tulis ini ja. Kenapa? karena butuh untuk latihan pake scrollbar Overflow:auto atau :scroll;Gatau lagi mau tulis apa tapi gpp la biar panjang aku tulis ini ja. Kenapa? karena butuh untuk latihan pake scrollbar Overflow:auto atau :scroll;Gatau lagi mau tulis apa tapi gpp la biar panjang aku tulis ini ja. Kenapa? karena butuh untuk latihan pake scrollbar Overflow:auto atau :scroll;</div>
+<div class="box"> Test </div>
+
+<div class="box"> <a href="index.html"> Back </a></div>
+
+<div class="BackgroundTest">
+
+</div>
+
+<div id="kotakPar">
+	<p id="p1"> Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la</p>
+	<p id="p2"> Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la </p>
+	<p id="p3">  Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la</p>
+	<p id="p4">Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la </p>
+<section> Hi this is a section
+</section>
+</div>
+</body>
 </html>
