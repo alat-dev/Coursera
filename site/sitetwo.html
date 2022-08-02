@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hello, there</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
 	<style>
 		*{
 			box-sizing: border-box;
@@ -95,6 +96,20 @@
 			clear: both;
 			/*clear supaya gaboleh ada floating element yang ada di sebelah kiri/kanan/duaduanya darimereka*/
 		}
+
+		/*Belajar media queries*/
+		/*Untuk layar besar*/
+
+		@media (min-width: 1000px){
+			#box{
+				width: 15%;
+			}
+		}
+		@media (min-width: 800px) and (max-width:  999px){
+			#box{
+				width: 100%;
+			}
+		}
 	</style>
 </head>
 <body>
@@ -112,7 +127,7 @@ Hello, there
  Box Model	
 </h2>
 
-
+<button class="btn btn-primary"> Yow Anj</button>
 <div id="box">
 	<div id="Content">
 		I dont know what to write here because this just an example for the box modelling
@@ -137,8 +152,7 @@ Hello, there
 	<p id="p2"> Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la </p>
 	<p id="p3">  Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la</p>
 	<p id="p4">Ini cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu laIni cuman mau ngetes flexible boxing. Jadi ini tuh kayak ukuran box ini berdasarkan screennya. Pake persentase gitu la </p>
-<section> Hi this is a section
-</section>
+
 </div>
 </body>
 </html>
