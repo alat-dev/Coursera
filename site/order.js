@@ -1,9 +1,11 @@
 const midtransClient = require('midtrans-client');
+
 // Create Snap API instance
 let snap = new midtransClient.Snap({
         // Set to true if you want Production Environment (accept real transaction).
         isProduction : false,
-        serverKey : 'SB-Mid-server-cVa8-oDRE90wYYib0nZF9QNC'
+        serverKey : 'SB-Mid-server-cVa8-oDRE90wYYib0nZF9QNC',
+        clientKey : 'SB-Mid-client-ERzCzlJel9XdTXOM'
     });
  
 let parameter = {

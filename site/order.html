@@ -13,14 +13,14 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="order.css">
- 
-
  	<!-- @TODO: replace SET_YOUR_CLIENT_KEY_HERE with your client key -->
     <script type="text/javascript"
       src="https://app.sandbox.midtrans.com/snap/snap.js"
       data-client-key="SB-Mid-client-ERzCzlJel9XdTXOM"></script>
 
     <!-- Note: replace with src="https://app.midtrans.com/snap/snap.js" for Production environment -->
+  	<script type="" src="bundle.js"></script>
+
 </head>
 <body>
 	<div class="container-fluid formulir card">
@@ -93,12 +93,15 @@
 	
 <!--<button id="pay-button">Pay!</button> -->
  
+
+
     <script type="text/javascript">
       // For example trigger on button clicked, or any time you need
       var payButton = document.getElementById('pay-button');
       payButton.addEventListener('click', function () {
         // Trigger snap popup. @TODO: Replace TRANSACTION_TOKEN_HERE with your transaction token
-        window.snap.pay("abceeee-68", {
+
+        window.snap.pay( "abceeee", {
           onSuccess: function(result){
             /* You may add your own implementation here */
             alert("payment success!"); console.log(result);
@@ -116,7 +119,10 @@
             alert('you closed the popup without finishing the payment');
           }
         // customer will be redirected after completing payment pop-up
-      })
+
+      }
+      )
+ 
   });
     </script>
 
@@ -131,6 +137,6 @@
   	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   	<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
  	<script src="assets/vendor/php-email-form/validate.js"></script>
- 	      	<script type="text/javascript src="order.js></script>
+ 	
 </body>
 </html>
