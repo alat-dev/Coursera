@@ -10,7 +10,7 @@ let snap = new midtransClient.Snap({
  
 let parameter = {
     "transaction_details": {
-        "order_id": "1660057103688",
+        "order_id": 1660057103688,
         "gross_amount": 10000
     },
     "credit_card":{
@@ -29,4 +29,4 @@ snap.createTransaction(parameter)
         // transaction token
         let transactionToken = transaction.token;
         console.log('transactionToken:',transactionToken);
-    })
+    });
